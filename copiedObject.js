@@ -11,6 +11,7 @@ const person = {
 };
 
 const newPerson = { ...person }; //shallow copy
+const newPerson2 = structuredClone(newPerson2); //deep copy because can't reflect original object
 newPerson.object.map?.set("bananas", 300);
 newPerson.set?.add(10);
 
